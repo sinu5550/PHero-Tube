@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero | Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-blog">
+    <div class="container mt-5 pt-5 px-5 mx-5 mx-auto ">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bolder fs-5 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Discuss the scope of var, let, and const
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong class="text-danger">var: </strong> <br> Var can be declared in global scope or
+                        functional scope. When it is declared in a global scope it is accessible from anywhere from the
+                        app. When it is declared in a functional scope it is accessible throughout the function.Also the
+                        value can be changed. <br>
+                        <strong class="text-danger">let: </strong> <br> It is blocked scope. Variable declared with let
+                        are only accessible within the block they are defined in, it can't be access from outer scope
+                        but it permits to re-assign the value.<br>
+                        <strong class="text-danger">const: </strong> <br> Variable declared with const cannot be
+                        re-assigned. it behaves similarly to 'let'. It is also a blocked scope. That means the value is
+                        immutable. This is the most used variable because of solving the both global scope problem and
+                        re-assigned issue.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Tell us the use cases of null and undefined
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong class="text-danger">null: </strong> <br> Null is used to represent the absense of any
+                        object value.It is used as a placeholder value for any missing data. <br>
+                        <strong class="text-danger">undefined: </strong> <br> It is a default value for un-initialized
+                        variables. When a variable is declared but not initialized, it automatically assign the value
+                        'undefined'. Undefined is returned when trying to access a non-existing property of an object.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bolder fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What do you mean by REST API?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong class="text-danger">REST API: </strong> <br>
+                        A REST APIis an architectural style for designing network apps. It utilize HTTP methods, such as
+                        GET,POST,PUT and DELETE to perform CRUD operations on resources. There are some key principles
+                        of REST API.
+                        <br>
+                        <span class="fw-bold">*Stateless: </span> Every request must contain all necessary info to
+                        understand and perform the request. <br>
+                        <span class="fw-bold">*Cacheability: </span> The respones can be cached, which will improve the
+                        performance.<br>
+                        <span class="fw-bold">*Client-server model: </span> It allows client and server to perform
+                        independently, because it separate client and server.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" my-5 mx-auto text-center">
+            <a href="./index.html" class="btn px-4 fw-bold active  my-3 py-2 mx-auto">Back
+                to Home</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Custome JS  -->
+    <script src=" ./pheroTube.js"></script>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
